@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
+add_compile_definitions(USE_CLEANUP_CUSTOM_DATATYPES)
+
 project(opcua_ns_server)
 
 add_subdirectory(lib/open62541)

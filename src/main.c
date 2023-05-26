@@ -35,8 +35,6 @@ int main(int argc, const char *argv[]) {
   const UA_DataTypeArray *customTypes =
     UA_Server_getConfig(server)->customDataTypes;
   UA_Server_delete(server);
-  #ifdef  USE_CLEANUP_CUSTOM_DATATYPES
   NodesetLoader_cleanupCustomDataTypes(customTypes);
-  #endif  //USE_CLEANUP_CUSTOM_DATATYPES
   return retval == UA_STATUSCODE_GOOD ? EXIT_SUCCESS : EXIT_FAILURE;
 }
