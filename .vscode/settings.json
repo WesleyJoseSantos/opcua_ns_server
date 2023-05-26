@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "backendopen62541.h": "c",
+        "log_stdout.h": "c",
+        "server_config_default.h": "c",
+        "server.h": "c"
+    }
+}
